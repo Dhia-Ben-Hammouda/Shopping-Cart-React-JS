@@ -16,7 +16,7 @@ const LandingPage = () => {
       window.location.href = "/";
     }
 
-    const response = await fetch("http://localhost:5000/item");
+    const response = await fetch("https://e-commerce-react-js.herokuapp.com/item");
     const data = await response.json();
     setitems(data);
   }, []);
