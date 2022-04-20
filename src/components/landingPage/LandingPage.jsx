@@ -34,13 +34,13 @@ const LandingPage = () => {
     <div id="landingPage">
       <div className="wrapper">
         <div className="filter-container">
-          <h3>Filter By :</h3>
+          <h3 style={ {color:"#555"} }>Filter By :</h3>
           <br />
-          <label><input type="checkbox" defaultChecked />PC</label>
+          <label style={ {color:"#555" } }><input style={ {marginRight:"2px"} } type="checkbox" defaultChecked />PC</label>
           <br />
-          <label><input type="checkbox" defaultChecked />Keyboard</label>
+          <label style={ {color:"#555"} }><input style={ {marginRight:"2px"} } type="checkbox" defaultChecked />Keyboard</label>
           <br />
-          <label><input type="checkbox" defaultChecked />Headphone</label>
+          <label style={ {color:"#555"} }><input style={ {marginRight:"2px"} } type="checkbox" defaultChecked />Headphone</label>
         </div>
         <div className="item-container">
           {
@@ -96,7 +96,7 @@ const LandingPage = () => {
         <button>PAY CART</button>
       </div>
 
-      <div style={ { cursor:"pointer" , position:"absolute" , top:"25px" , right:"25px"} }><FaSignOutAlt onClick={ clickHandler } size={30} /></div>
+      <div style={ { cursor:"pointer" , position:"absolute" , top:"25px" , right:"25px"} }><FaSignOutAlt onClick={ clickHandler } style={ {color:"#555"} } size={30} /></div>
     </div>
   );
 }
