@@ -170,13 +170,12 @@ form button:hover{
 
 
 .item{
-  box-shadow: 0px 0px 7px;
+  box-shadow: 0px 0px 5px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   align-items: center;
   background:#FFF;
-  border-radius: 10px;
   padding:1rem;
   font-weight: 700;
 }
@@ -202,12 +201,11 @@ form button:hover{
 
 
 .filter-container{
-  width:10%;
-  height:300px;
-  align-self: flex-start;
-  margin-top:6rem;
-  margin-right:2rem;
-  margin-left: 1rem;
+  width:80%;
+  display:flex;
+  align-items: center;
+  position:relative;
+  top:70px;
 }
 
 label{
@@ -218,6 +216,9 @@ label{
 .wrapper{
   width:100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-container{
@@ -250,9 +251,8 @@ label{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 10px;
+  box-shadow: 0px 0px 5px;
   margin:1rem;
-  border-radius: 10px;
 }
 
 .cart-item img{

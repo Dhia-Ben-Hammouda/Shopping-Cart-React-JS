@@ -30,17 +30,14 @@ const LandingPage = () => {
   }
 
 
-  return (
+  return(
     <div id="landingPage">
       <div className="wrapper">
         <div className="filter-container">
           <h3 style={ {color:"#555"} }>Filter By :</h3>
-          <br />
-          <label style={ {color:"#555" } }><input style={ {marginRight:"2px"} } type="checkbox" defaultChecked />PC</label>
-          <br />
-          <label style={ {color:"#555"} }><input style={ {marginRight:"2px"} } type="checkbox" defaultChecked />Keyboard</label>
-          <br />
-          <label style={ {color:"#555"} }><input style={ {marginRight:"2px"} } type="checkbox" defaultChecked />Headphone</label>
+          <label style={ {color:"#555" } }><input type="checkbox" defaultChecked />PC</label>
+          <label style={ {color:"#555"} }><input type="checkbox" defaultChecked />Keyboard</label>
+          <label style={ {color:"#555"} }><input type="checkbox" defaultChecked />Headphone</label>
         </div>
         <div className="item-container">
           {
@@ -48,11 +45,6 @@ const LandingPage = () => {
               return (
                 <div className="item" key={index}>
                   <img src={item.image} />
-                  <p style={{ fontSize: "12px" }}>
-                    {
-                      item.description
-                    }
-                  </p>
                   <button onClick={() => {
                     setcart([...cart, { img: item.image, name: item.name }]);
                   }}>
